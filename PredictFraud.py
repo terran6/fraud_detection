@@ -203,7 +203,7 @@ if __name__ == '__main__':
     df = df.rename(columns={'Class': 'fraud'})
     features = df.columns[1:29]
     
-    analyze_features(features,df)
+    #analyze_features(features,df)
 
     '''
     Drop features from dataframe that have similar distributions among transactions that are fraud and
