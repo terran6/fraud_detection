@@ -10,14 +10,14 @@ Because features were anonymous, it was difficult to decide which features would
 
 ![image](images/Feature_Unimportant.png)
 
-In the image below, we can see that there are significant differences in the distributions of fraud and not fraud instances.  This implies that there are differences in behavior that would be important to look at for classification.  Note how if we were to take a certain range of this feature (for example taking values less than -5 in this feature, V12) we can see that we are able to separate the different classes more effectively.  We can then engineer features that more easily distinguish fraud and not fraud groups in order to aid in our machine learning classification algorithm.
+In the image below, we can see that there are significant differences in the distributions of fraud and not fraud instances.  This implies that there are differences in behavior that would be important to look at for classification.  Note how if we were to take a certain range of this feature (for example taking values less than -5 in this feature, V12) we can see that we are able to separate the different classes more effectively.  We can then engineer features that more easily distinguish fraud and not fraud groups in order to aid in our machine learning classification.
 
 ![image](images/Feature_Important.png)
 
 # Machine Learning Model
-In this instance, a Logistic Regression model was utilized in order to predict an insance as being fraud or not fraud.  The important thing to note about this set of data, and most likely most other sets of data dealing with fraud, is the scarcity of fraud instances among the tens of thousands of normal transactions that have taken place.  The problem with training a model on the entire set of data, is that the algorithm will quickly come to find out that classifying all instances as not fraud will still gain a considerably high accuracy score.  Because of this, undersampling was utilized here to avoid these issues.
+In this instance, a Logistic Regression model was utilized in order to predict an insance as being fraud or not fraud.  The important thing to note about this set of data, and most likely most other sets of data dealing with fraud, is the scarcity of fraud instances among the hundreds of thousands of normal transactions that have taken place.  The problem with training a model on the entire set of data is that the algorithm will quickly come to find out that classifying all instances as not fraud will still gain a considerably high accuracy score.  Because of this, undersampling was utilized here to avoid these issues.
 
-After training a model on the undersampled data, I was able to see how my model was able to perform among that subsample.
+After training a model on the undersampled data, I was able to see how my model could perform among that subsample.
 
 ![image](images/undersample_predict.png)
 
@@ -25,6 +25,6 @@ The classification model trained on the subgroup of data achieved a recall score
 
 ![image](images/full_predict.png)
 
-Here we see a recall score of ~94.6%.
+Here we see that our model, even predicting on the entire test dataset, achieves recall score of ~94.6%.
 
 
