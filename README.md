@@ -1,5 +1,5 @@
 # Fraud Detection
-This project is based off the analysis of a Kaggle dataset that is a conglomeration of instances with anonymous feature data and their corresponding classification of fraud or not fraud.  The intent of this project was to utilize machine learning in order to create a model that was able to most accurately predict fraud.
+This project is based on the analysis of a Kaggle dataset that is a conglomeration of instances with anonymous feature data and their corresponding classification of fraud or not fraud.  The intent of this project was to utilize machine learning in order to create a model that was able to most accurately predict fraud.
 
 An important aspect of fraud detection, is to understand which metric you want to optimize in order to have a well performing model.  In many instances of fraud detection, it is important to ensure that the occurence of fraud is not missed.  This means that one would want to create a model that is more sensitive to classifying something as fraud, however, this increases the chances of classifying something as fraud even though it may not be the case.
 
