@@ -27,4 +27,7 @@ The classification model trained on the subgroup of data achieved a recall score
 
 Here we see that our model, even predicting on the entire test dataset, achieves recall score of ~94.6%.
 
+# Important Considerations
+For this specific example, we are looking at decreasing the recall score because I was specifically interested in decreasing False Negative classifications.  Meaning, I am more interested in Classifying as many fraudulent incidences as possible without worrying about False Positives (or falsely predicting a normal transaction as fraudulent).  In many circumstances, one would have to evaluate a cost benefit in order to find the optimal threshhold for positive or negative classification.  
 
+For example, the average cost for not catching a fraudulent incident (a False Negative classification) may be $1000.  However, there may also be a cost associated with predicting a fraudulent incident when in actuality it was a normal transaction.  Let's say this is $10.  In my example, with 11,041 False Positives and 8 False Negatives, my False Positives cost me $110,410 while my False Negatives only cost me $8,000.  So there is a tradeoff associated with how sensitive you would want your model to be on either side of the spectrum.
