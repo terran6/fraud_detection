@@ -15,7 +15,7 @@ In the image below, we can see that there are significant differences in the dis
 ![image](images/Feature_Important.png)
 
 # Machine Learning Model
-In this instance, a Logistic Regression model was utilized in order to predict an insance as being fraud or not fraud.  The important thing to note about this set of data, and most likely most other sets of data dealing with fraud, is the scarcity of fraud instances among the hundreds of thousands of normal transactions that have taken place.  The problem with training a model on the entire set of data is that the algorithm will quickly come to find out that classifying all instances as not fraud will still gain a considerably high accuracy score.  Because of this, undersampling was utilized here to avoid these issues.
+In this instance, a Logistic Regression model was utilized in order to predict an instance as being fraud or not fraud.  The important thing to note about this set of data, and most likely most other sets of data dealing with fraud, is the scarcity of fraud instances among the hundreds of thousands of normal transactions that have taken place.  The problem with training a model on the entire set of data is that the algorithm will quickly come to find out that classifying all instances as not fraud will still gain a considerably high accuracy score.  Because of this, undersampling was utilized here to avoid these issues.
 
 After training a model on the undersampled data, I was able to see how my model could perform among that subsample.
 
